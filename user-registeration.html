@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> Registeration page </title>
+<style>
+body {
+	background: gray;
+}
+.log-in{
+	max-width: 350px;
+	background: #2e2e54;
+	padding: 40px;
+	color: white;
+	font-family:sans-serif;
+	font-weight:bold;
+	letter-spacing:1px;
+	margin:auto;
+	font-size=18px;
+}
+input[type=text],input[type=password]{
+	width:100%;
+	padding:10px;
+	margin:10px 0;
+}
+input[type=submit]{
+	width:49%;
+	padding:15px;
+	margin-top: 30px;
+	background:#5454d8;
+	border:none;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:1px;
+	cursor:pointer;
+}
+span{
+	font-size:15px;
+}
+@media screen and {maz-width:600px) {
+	imput[type=submit]{
+	width:100%
+	}
+}
+</style>
+</head>
+<body>
+		<div class = "log-in">
+	
+			<form action="registerprocess.php" method="post">		
+              <br>
+                <label for="name"> Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name.." size="30" maxlength="50" required /><br><br>
+            
+                <label for="phone">Phone No.</label>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." size="30" maxlength="50" required /><br><br>
+                
+                <label for="email">Email ID.</label>
+                <input type="text" id="email" name="email" placeholder="Your Email Address.." size="30" maxlength="50" required /><br><br>
+				
+				<label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="Password" size="30" maxlength="50" /><br><br>
+				
+				<label for="confirmpassword">Confirm Password</label>
+                <input type="text" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" size="30" maxlength="50" /><br><br>
+				
+				<label for="city">Your City</label>
+                <select id="city" name="city">
+					<option value="Choose">Choose</option>
+                  <option value="Brisbane">Brisbane</option>
+                  <option value="Gold Coast">Gold Coast</option>
+                  <option value="Sunshine Coast">Sunshine</option>
+                </select>  <br><br>         
+                <input type="submit" id="submit" value="Submit" />
+              </form>
+		</div>
+</body>
+</html>
+			
+			

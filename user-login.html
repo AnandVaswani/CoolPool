@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<title> Login Page </title>
+<style>
+body {
+	background: gray;
+}
+.log-in{
+	max-width: 350px;
+	background: #2e2e54;
+	padding: 40px;
+	color: white;
+	font-family:sans-serif;
+	font-weight:bold;
+	letter-spacing:1px;
+	margin:auto;
+	font-size=18px;
+}
+input[type=text],input[type=password]{
+	width:100%;
+	padding:10px;
+	margin:10px 0;
+}
+input[type=submit]{
+	width:49%;
+	padding:15px;
+	margin-top: 30px;
+	background:#5454d8;
+	border:none;
+	color:white;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:1px;
+	cursor:pointer;
+}
+span{
+	font-size:15px;
+}
+@media screen and {maz-width:600px) {
+	imput[type=submit]{
+	width:100%
+	}
+}
+</style>
+</head>
+<body>
+		<div class = "log-in">
+	
+			<form action="loginprocess.php"  method="POST">			
+				<label>Username:</label>
+				<input type="text" id="username" name="username" placeholder ="Username" />
+				<label>Password:</label>
+				<input type="password" id="password" name="password" placeholder= "Password" /> <br>
+				<input type="checkbox" name="checkbox"><span>Remember Me</span><br>
+				<input type ="submit" value ="Reset">
+				<input type="submit" value="Login" />
+				
+			</form>
+		</div>
+</body>
+</html>
+			
+			
